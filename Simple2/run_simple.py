@@ -243,8 +243,8 @@ node_label_pos = {k:[v[0],v[1]-0.25] for k,v in state_space_locations.items()} #
 edge_labels = dict()
 
 # add edges between nodes in the map - UndirectedGraph defined in search.py
-for node in maze_map.nodes():
-    connections = maze_map.get(node)
+for node in state_space_locations.nodes():
+    connections = state_space_locations_map.get(node)
     for connection in connections.keys():
         distance = connections[connection]        
         G.add_edge(node, connection) # add edges to the graph        
