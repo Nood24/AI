@@ -1,0 +1,1 @@
+jupyter nbconvert lab_3_search_v2019a.ipynb --to html
