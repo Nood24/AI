@@ -13,11 +13,9 @@ def environment():
     print(problem_id)
     # problem_id=0
     env = LochLomondEnv(problem_id=problem_id,is_stochastic=False,reward_hole=0.0)
-    env.render()
-    sys.exit()
     epsilon = 0.9
-    total_episodes = 50000
-    max_steps = 300
+    total_episodes = 100
+    max_steps = 100
 
     lr_rate = 0.81
     gamma = 0.96
@@ -27,13 +25,11 @@ def environment():
 def environment_eval(problem_id):
     # Environment
     problem_id=problem_id
-
     # problem_id=0
     env = LochLomondEnv(problem_id=problem_id,is_stochastic=False,reward_hole=0.0)
-    env.render()
-    sts.exit()
+
     epsilon = 0.9
-    total_episodes = 2000
+    total_episodes = 100
     max_steps = 100
 
     lr_rate = 0.81
